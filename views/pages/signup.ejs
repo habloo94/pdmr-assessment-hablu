@@ -1,0 +1,45 @@
+<%- include('../partials/header',{page:page}); %>
+
+<div class="container">
+    <div class="signup">
+        
+        <h1 class="text-center mb-4">Register!</h1>
+        <form action="/users" method="post">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <div class="mb-4">
+                    <label for="firstname" class="form-label">FIRST NAME</label>
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-4">
+                    <label for="lastname" class="form-label">LAST NAME</label>
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-4">
+                    <label for="username" class="form-label">LOGIN NAME</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="User Name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-4">
+                    <label for="password" class="form-label">PASSWORD</label>
+                    <input type="password" class="form-control" name="password" id="password"
+                        placeholder="*******">
+                </div>
+            </div>
+            <div class="col-12 login-btn">
+                <div class="d-flex justify-content-between">
+                    <button type="reset" class="btn btn-block btn-warning">Reset</a>
+                <button type="submit" class="btn btn-block btn-success">Register</a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <!-- <h1>Used Cars</h1> -->
+</div>
+<%- include('../partials/footer'); %>

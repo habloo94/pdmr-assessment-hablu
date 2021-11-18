@@ -1,0 +1,32 @@
+<%- include('../partials/header',{page:page}); %>
+
+<div class="container">
+    <div class="login">
+        
+        <h1 class="text-center mb-4">Login</h1>
+        <form action="/login" method="post">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="mb-4">
+                    <input type="text" class="form-control" id="username" name="username"
+                        placeholder="USERNAME" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-4">
+                    <input type="password" class="form-control" id="password" name="password"
+                        placeholder="PASSWORD" required>
+                </div>
+            </div>
+            <div class="col-12 login-btn">
+                <div class="d-flex justify-content-between">
+                    <a class="btn  btn-block btn-info" href="/signup">SignUp</a>
+                <button type="submit" class="btn btn-block btn-success">Login</a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <!-- <h1>Used Cars</h1> -->
+</div>
+<%- include('../partials/footer'); %>
